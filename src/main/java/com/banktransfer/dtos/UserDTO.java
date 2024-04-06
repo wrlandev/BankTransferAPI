@@ -1,0 +1,8 @@
+package com.banktransfer.dtos;
+
+import com.banktransfer.enums.UserType;
+
+import java.math.BigDecimal;
+
+public record UserDTO(String firstName, String lastName, String document, BigDecimal balance, String email, String password, UserType userType) {
+}
